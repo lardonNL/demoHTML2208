@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var seasons_passed_a = 0;
+        var seasons_passed_b = 0;
+        function buttonpress_a(Button){
+            seasons_passed_a++;
+            var current_season = seasons_passed_a % 4;
+            if (current_season == 0){
+                document.getElementById("image_a").src = "images/lente.jpg"
+            } else if (current_season == 1){
+                document.getElementById("image_a").src = "images/summer.jpg"
+            } else if (current_season == 2){
+                document.getElementById("image_a").src = "images/herfst.jpg"
+            } else if (current_season == 3){
+                document.getElementById("image_a").src = "images/winter.jpg"
+            } else {
+                alert("iets is kapot");
+            }
+        }
+
+        function buttonpress_b(Button){
+            seasons_passed_b++;
+            var current_season = seasons_passed_b % 4;
+            if (current_season == 0){
+                document.getElementById("image_b").src = "images/lente.jpg"
+            } else if (current_season == 1){
+                document.getElementById("image_b").src = "images/summer.jpg"
+            } else if (current_season == 2){
+                document.getElementById("image_b").src = "images/herfst.jpg"
+            } else if (current_season == 3){
+                document.getElementById("image_b").src = "images/winter.jpg"
+            } else {
+                alert("iets is kapot");
+            }
+        }
+
+        function compare(){
+            if (document.getElementById("image_a").src == document.getElementById("image_b").src){
+                console.log("HETZELFDE");
+            } else {
+                console.log("NIET HETZELFDE");
+            }
+
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="button" onclick="buttonpress_a()" value="Wissel A">
+    <input type="button" onclick="buttonpress_b()" value="Wissel B">
+    <input type="button" onclick="compare()" value="vergelijk"> <br>
+    <img src="images/lente.jpg" alt="kaput" id="image_a">
+    <img src="images/lente.jpg" alt="kaput" id="image_b">
+    <div id="output"></div>
+</body>
+</html>

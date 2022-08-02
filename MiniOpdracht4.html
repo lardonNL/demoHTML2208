@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var output= "";
+        function buttonpress(Button){
+            //alert(Button);
+            output = output + "U heeft op knop " + Button + " geklikt.<br>";
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="button" onclick="buttonpress('A')" value="A">
+    <input type="button" onclick="buttonpress('B')" value="B">
+    <input type="button" onclick="buttonpress('C')" value="C">
+    <input type="button" onclick="buttonpress('D')" value="D">
+    <div id="output"></div>
+</body>
+</html>

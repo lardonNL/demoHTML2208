@@ -1,0 +1,68 @@
+  499  ls
+  500  ls
+  501  pwd
+  502  ls
+  503  cd Desktop/
+  504  ls
+  505  cd dag1yc2208/
+  506  ls
+  507  history
+  508  clear
+  509  cd ..
+  510  cd dag1yc2208/
+  511  ls
+  512  git
+  513  ls
+  514  pwd
+  515  ls
+  516  git init
+  517  git init
+  518  git status
+  519  git add .
+  520  git status
+  521  git commit -m "dit is commit 1"
+  522  git log
+  523  git status
+  524  git status
+  525  git add .
+  526  git commit -am "tweede versie"
+  527  git status
+  528  git log
+  529  git add .
+  530  git commit -m "voeg toe"
+  531  git log
+  532  git remote add origin https://github.com/FelixvL/demoindyc2208.git
+  533  git push
+  534  git push -u origin master
+  535  git status
+  536  git add .
+  537  git commit -am "hele nieuwe functie"
+  538  git push
+  539  git add . && git commit -m "stukje message" && git push
+  540  git add . && git commit -m "stukje message" && git push
+  541  git add . && git commit -m "stuk2" && git push
+  542  git status
+  543  git status
+  544  git add .
+  545  git commit
+  546  git log
+  547  git status
+  548  git status
+  549  git add .
+  550  git commit
+  551  git status
+  552  git log
+  553  git add .
+  554  git status
+  555  git add .
+  556  git commit -am "go"
+  557  git status
+  558  git log
+  559  git checkout 7a610b5
+  560  git checkout -b nieuwepoging
+  561  git checkout HEAD
+  562  git checkout master
+  563  git checkout 7a610b5
+  564  git checkout HEAD
+  565  git checkout master
+  566  history

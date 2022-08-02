@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+            // ARRAY   []
+            function eenarray(){
+                var lijstje = [14,27,2,4,90];
+                console.log( lijstje[3] );
+
+                for( var x = 3 ; x < 10 ; x += 2 ){
+                    console.log(x);
+                }
+
+                for(var y = 0; y < lijstje.length ; y++){
+                    console.log(lijstje[y]);
+                }
+                for( q in lijstje ){
+                    console.log(lijstje[q]);
+                }
+                var blokjes = document.getElementsByClassName("blokje");
+                for(var u = 0; u < blokjes.length ; u += 2){
+                    blokjes[u].style.backgroundColor = "red";
+                }
+            }
+    </script>
+    <style>
+        div{
+            display: inline-block;
+            background-color: yellow;
+            border: 2px solid blue;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="eenarray()">
+    <div class="blokje"></div>
+    <div class="blokje"></div>
+    <div class="blokje"></div>
+    <div class="blokje"></div>
+    <div class="blokje"></div>
+</body>
+</html>
