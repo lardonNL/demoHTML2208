@@ -16,6 +16,7 @@
                 document.getElementById("image_b").src = "images/lammetje.jpg"
             } else if (current_season == 1){
                 document.getElementById("image_a").src = "images/summer.jpg"
+                document.getElementById("image_b").src = "images/kebab.jpg"
             } else if (current_season == 2){
                 document.getElementById("image_a").src = "images/herfst.jpg"
             } else if (current_season == 3){
@@ -24,40 +25,13 @@
                 alert("iets is kapot");
             }
         }
-
-        // function buttonpress_b(Button){
-        //     seasons_passed_b++;
-        //     var current_season = seasons_passed_b % 4;
-        //     if (current_season == 0){
-        //         document.getElementById("image_b").src = "images/lente.jpg"
-        //     } else if (current_season == 1){
-        //         document.getElementById("image_b").src = "images/summer.jpg"
-        //     } else if (current_season == 2){
-        //         document.getElementById("image_b").src = "images/herfst.jpg"
-        //     } else if (current_season == 3){
-        //         document.getElementById("image_b").src = "images/winter.jpg"
-        //     } else {
-        //         alert("iets is kapot");
-        //     }
-        // }
-
-        // function compare(){
-        //     if (document.getElementById("image_a").src == document.getElementById("image_b").src){
-        //         console.log("HETZELFDE");
-        //     } else {
-        //         console.log("NIET HETZELFDE");
-        //     }
-
-        // }
     </script>
     <style>
 
     </style>
 </head>
 <body>
-    <input type="button" onclick="buttonpress_a()" value="Wissel A">
-    <!-- <input type="button" onclick="buttonpress_b()" value="Wissel B"> -->
-    <!-- <input type="button" onclick="compare()" value="vergelijk"> <br> -->
+    <input type="button" onclick="buttonpress_a()" value="A"> <br>
     <img src="images/lente.jpg" alt="kaput" id="image_a">
     <img src="images/lammetje.jpg" alt="kaput" id="image_b">
     <!-- <div id="output"></div> -->
