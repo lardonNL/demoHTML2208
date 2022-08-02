@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // functie   function methode  procedure
+        // ()  ronde haakjes   definitie   aanroep
+        // Variabele
+        // Operator
+        // strongly typed  java c# c++ typescript
+        // weakly typed
+        function denaamfunctie(){
+           // alert();
+            var a;   // declareren  1x
+            let b;
+            const c = 9;
+            a = 95;   // assignen   oneindig x
+
+           // alert(a * 6);
+            a = "maandag";
+            //    + - *  /    %     **
+            a = 10 % 4;
+            console.log(a);
+            console.log(a ** 4);
+            // comparative      ==    !=    ===    !==    <   <=   >  >=
+            var x = 15;
+            var y = 15.0;
+            console.log( x == 12 );
+            console.log( x == 15 );
+            console.log("===========");
+            console.log(x == y);
+            console.log(x === y);
+            //   &&    ||   logische operators
+            var g = 35;
+            console.log(   true ||  false    );
+            console.log(x == 15 && g == 34);
+            //  ! omflippen
+            console.log(! x== 15);
+            //  +=    *=  /=   %=   -=    ++  -- 
+            console.log("===========");
+            console.log(a);
+            a = a + 3;
+            a += 3;
+            a++;   //  evalueren   incrementeren
+            ++a;   // incrementeren evaluerean
+            console.log(a);
+            console.log(++a);
+
+            console.log(a);
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="Klik hier" onclick="denaamfunctie()"/>
+</body>
+</html>

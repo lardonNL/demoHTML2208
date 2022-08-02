@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // verbose boilerplate code
+        var totale_kosten = parseInt(0);
+        var product_kost = 
+        function denaamfunctie(){
+            // var invoer = document.getElementById("kosten").value;
+            // document.getElementById("korter").innerHTML = "Welkom: <b>"+invoer+"</b>";
+
+            // if(invoer == "abc"){
+            //     alert("Geen abc hier");
+            // }
+            // else{
+            //     alert("dit mag")
+            // }
+            // getal = parseInt(invoer);
+            // console.log(getal + getal);
+            // var elem = document.getElementById("korter");
+            // elem.style.background = "red";
+
+            // OPDRACHT 1
+            var invoer = document.getElementById("kosten").value;
+            document.getElementById("korter").innerHTML = "Welkom: <b>"+invoer+"</b>";
+            var elem = document.getElementById("korter");
+            getal = parseInt(invoer);
+
+            if(getal >= 18 ){
+                elem.style.background = "green";
+                alert("Je mag drinken!");
+            }
+            else if(getal >= 16 && getal <= 17){
+                elem.style.background = "orange";
+                alert("Geen zware alcohol!");
+            }
+            else{
+                elem.style.background = "red";
+                alert("Geen druppel!");
+            }
+
+
+            // OPDRACHT 2
+            // var invoer = document.getElementById("kosten").value;
+            // if(invoer == ""){
+            //     invoer = 0;
+            // }
+            // getal = parseInt(invoer);
+            // totale_kosten += getal
+            // document.getElementById("korter").innerHTML = "Totale kosten: <b>"+totale_kosten+"</b>";
+
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <!-- OPDRACHT 1 -->
+    <input type="button" value="Klik hier" onclick="denaamfunctie()"/>
+    <br>
+    <input type="text" id="kosten" placeholder="Leeftijd">
+    <br>
+    <div id="korter">Leeftijd:</div>
+
+    <!-- OPDRACHT 2 -->
+    <!-- <input type="button" value="Klik hier" onclick="denaamfunctie()"/>
+    <br>
+    <input type="text" id="product" placeholder="Product"> <br>
+    <input type="text" id="kosten" placeholder="Kosten">
+    <br>
+    <div id="korter">Totale kosten: 0</div> -->
+</body>
+</html>

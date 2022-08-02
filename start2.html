@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //functie function = methode = procedure
+        // () ronde haakje, bestaat uit definitie en aanroep
+        // variabele = item met waarde
+        // strongly typed en weakly typed
+        function denaamfunctie(){
+            
+            var a; //declareren een keer per variabele
+            let b;
+            const c = 9;
+            a = 95; // assignen
+            // alert(a * 6);
+            a = "maandag";
+            // + - * / % arithmic operators
+            a = 10 % 4;
+            console.log(a);
+            console.log(a ** 4);
+            // comparitive operators == != === (moet zelfde type zijn) !=== <= >= < >
+            var x = 15;
+            console.log(x != 12);
+            // && || = and, or. Logic operators
+            console.log(true || false);
+            // ! flipt true naar false en false naar true
+            console.log(!false)
+            // += ++ -= --
+            console.log(a)
+            a++; // incrementeren gevold door evalueren.
+            ++a; // evalueren gevolgd door incrementeren.
+            console.log(a += 3) 
+            console.log(a++) 
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <input type="button" value="Klik hier" onmouseover="denaamfunctie()"/>
+</body>
+</html>
